@@ -1,0 +1,5 @@
+@import "applied";
+
+.more-styles {
+    @include applied();
+}

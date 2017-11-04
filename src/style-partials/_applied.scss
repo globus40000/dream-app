@@ -1,0 +1,6 @@
+@mixin applied() {
+    &::after {
+        content: ' applied';
+        color: green;
+    }
+}

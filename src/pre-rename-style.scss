@@ -1,0 +1,5 @@
+@import "applied";
+
+.pre-rename-style {
+    @include applied();
+}

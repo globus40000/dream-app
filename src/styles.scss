@@ -7,3 +7,10 @@ body {
     background: $bg;
     font-family: $font;
 }
+
+.styles {
+    &::after {
+        content: ' not applied';
+        color: red;
+    }
+}

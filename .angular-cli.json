@@ -20,8 +20,16 @@
       "prefix": "app",
       "styles": [
         "../node_modules/bootstrap/dist/css/bootstrap.css",
-        "styles.scss"
+        "styles.scss",
+        "more-styles.scss",
+        {"input": "lazy-style.scss", "lazy": true},
+        {"input": "pre-rename-style.scss", "output": "renamed-style"}
       ],
+      "stylePreprocessorOptions": {
+        "includePaths": [
+          "style-partials"
+        ]
+      },
       "scripts": [
         "../node_modules/jquery/dist/jquery.slim.js",
         "../node_modules/popper.js/dist/umd/popper.js",
