@@ -9,6 +9,7 @@
     "build": "ng build",
     "dev": "lite-server --config=bs-config.json",
     "test": "ng test",
+    "test-coverage": "ng test --code-coverage",
     "lint": "ng lint",
     "e2e": "ng e2e"
   },
