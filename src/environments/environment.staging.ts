@@ -1,5 +1,5 @@
 export const environment = {
-    name: 'development (hmr)',
+    name: 'staging',
     production: false,
-    hmr: true
+    hmr: false
 };
