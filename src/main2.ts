@@ -23,4 +23,4 @@ if (environment.hmr) {
     bootstrap();
 }
 
-console.log('app1');
+console.log('app2');

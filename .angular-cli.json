@@ -5,6 +5,7 @@
   },
   "apps": [
     {
+      "name": "app1",
       "root": "src",
       "outDir": "dist",
       "assets": [
@@ -13,6 +14,49 @@
       ],
       "index": "index.html",
       "main": "main.ts",
+      "polyfills": "polyfills.ts",
+      "test": "test.ts",
+      "tsconfig": "tsconfig.app.json",
+      "testTsconfig": "tsconfig.spec.json",
+      "prefix": "app",
+      "styles": [
+        "../node_modules/bootstrap/dist/css/bootstrap.css",
+        "styles.scss",
+        "more-styles.scss",
+        {"input": "lazy-style.scss", "lazy": true},
+        {"input": "pre-rename-style.scss", "output": "renamed-style"}
+      ],
+      "stylePreprocessorOptions": {
+        "includePaths": [
+          "style-partials"
+        ]
+      },
+      "scripts": [
+        "../node_modules/jquery/dist/jquery.slim.js",
+        "../node_modules/popper.js/dist/umd/popper.js",
+        "../node_modules/bootstrap/dist/js/bootstrap.js",
+        "global-script.js",
+        {"input": "lazy-script.js", "lazy": true},
+        {"input": "pre-rename-script.js", "output": "renamed-script"}
+      ],
+      "environmentSource": "environments/environment.ts",
+      "environments": {
+        "dev": "environments/environment.ts",
+        "hmr": "environments/environment.hmr.ts",
+        "staging": "environments/environment.staging.ts",
+        "prod": "environments/environment.prod.ts"
+      }
+    },
+    {
+      "name": "app2",
+      "root": "src",
+      "outDir": "dist",
+      "assets": [
+        "assets",
+        "favicon.ico"
+      ],
+      "index": "index.html",
+      "main": "main2.ts",
       "polyfills": "polyfills.ts",
       "test": "test.ts",
       "tsconfig": "tsconfig.app.json",
