@@ -1,6 +1,9 @@
 version: 2
 jobs:
   build:
+    branches:
+      only:
+        - cli-stories
     working_directory: ~/my-project
     docker:
       - image: circleci/node:6-browsers
