@@ -1,5 +1,7 @@
 # DreamApp
 
+[![Build Status](https://travis-ci.org/globus40000/dream-app.svg?branch=cli-stories)](https://travis-ci.org/globus40000/dream-app)
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.4.9.
 
 ## Development server
